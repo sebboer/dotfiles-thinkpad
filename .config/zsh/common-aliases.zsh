@@ -21,8 +21,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
 # i3
+alias i3config='vim /home/basti/.config/i3/config'
 alias lock='/usr/bin/betterlockscreen -l'
 alias sound='alsamixer'
 
 #
 alias vim='nvim'
+alias grive='grive -p /home/basti/googledrive/'
