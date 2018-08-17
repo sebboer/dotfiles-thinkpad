@@ -24,6 +24,15 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias i3config='vim /home/basti/.config/i3/config'
 alias lock='/usr/bin/betterlockscreen -l'
 alias sound='alsamixer'
+alias polyconfig='vim ~/.config/polybar/config'
+
+# Docker
+alias dk='docker'
+alias dkc='docker container'
+alias dkls='docker container ls'
+alias dkl='docker container logs'
+alias dks='docker service'
+alias dm='docker-machine'
 
 #
 alias vim='nvim'
