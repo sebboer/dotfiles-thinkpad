@@ -33,7 +33,11 @@ alias dkls='docker container ls'
 alias dkl='docker container logs'
 alias dks='docker service'
 alias dm='docker-machine'
+alias dki='docker image'
+alias dkstart='systemctl start docker'
+alias dkco='docker-compose'
 
 #
 alias vim='nvim'
 alias grive='grive -p /home/basti/googledrive/'
+alias gnome-ctl='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
