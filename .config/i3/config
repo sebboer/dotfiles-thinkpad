@@ -146,19 +146,15 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # Windows to open on specific Workspace
-assign [class="Thunderbird"] $ws3
-assign [class="Bitwarden"] $ws3
-assign [class="TelegramDesktop"] $ws2
-assign [class="discord"] $ws2
-
-for_window [class="Spotify"] move to workspace $ws4
-
+assign [class="Thunderbird"] $ws5
+assign [class="Bitwarden"] $ws5
+assign [class="TelegramDesktop"] $ws4
+assign [class="discord"] $ws4
 
 # ===========================================================================================
 # Autostart
 # ===========================================================================================
 
-exec spotify
 exec thunderbird
 exec bitwarden
 exec urxvt
@@ -258,3 +254,5 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Compton Transitions
 exec_always compton 
+
+exec --no-startup-id nm-applet --sm-disable
