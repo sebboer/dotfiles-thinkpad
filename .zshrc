@@ -40,6 +40,7 @@ plugins=(
   nvm
   node
   ng
+  aws
 )
 
 source $ZSH/oh-my-zsh.sh
