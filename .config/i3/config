@@ -156,7 +156,7 @@ assign [class="discord"] $ws4
 # ===========================================================================================
 
 exec thunderbird
-exec bitwarden-bin
+exec bitwarden-desktop
 exec urxvt
 exec telegram-desktop
 exec discord
@@ -235,14 +235,16 @@ new_window pixel 3
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color2 #f0f0f0
 set_from_resource $ac i3wm.color0 #f0f0f0
-set_from_resource $ur i3wm.color5 #ff0000
+set_from_resource $ia i3wm.color5 #ff0000
+set_from_resource $IA i3wm.color4 #ff0000
+set_from_resource $ur i3wm.color6 #db1344
 
 # class                 border  backgr. text indicator child_border
-client.focused          $bg     $ur     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $ac
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.focused          $bg     $bg     $fg  $bg       $ur
+client.focused_inactive $IA     $ia     $fg  $bg       $ac
+client.unfocused        $IA     $ia     $fg  $bg       $ac
+client.urgent           $bg     $ur     $fg  $bg       $bg
+client.placeholder      $bg     $ia     $fg  $bg       $bg
 
 client.background       $bg
 
