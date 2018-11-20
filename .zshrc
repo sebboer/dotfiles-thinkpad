@@ -41,6 +41,7 @@ plugins=(
   node
   ng
   aws
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
