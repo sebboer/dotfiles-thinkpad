@@ -56,7 +56,7 @@ module-margin-right = 2
 
 modules-center = mpd 
 
-modules-right = updatenotifier battery backlight pulseaudio date powermenu 
+modules-right = redshift updatenotifier battery backlight pulseaudio date powermenu 
 
 modules-left = spotify
 
@@ -231,6 +231,13 @@ bar-width = 10
 bar-indicator = |
 bar-fill = ─
 bar-empty = ─
+
+[module/redshift]
+type = custom/script
+exec = ~/.config/polybar/scripts/red.sh
+format = <label>
+interval = 10
+click-left = ~/.config/polybar/scripts/redshift-toggle.sh &>> ~/.config/polybar/scripts/.red-cache 
 
 [module/cpu]
 type = internal/cpu
