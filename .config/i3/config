@@ -156,7 +156,7 @@ assign [class="discord"] $ws4
 # ===========================================================================================
 
 exec thunderbird
-exec bitwarden-desktop
+exec bitwarden-bin
 exec urxvt
 exec telegram-desktop
 exec discord
