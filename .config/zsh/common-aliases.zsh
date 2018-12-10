@@ -15,6 +15,7 @@ alias la="exa -lah"
 alias l="exa -lah"
 alias lt="exa -Th"
 alias lg="exa -lh --git"
+alias llr="exa -lRFL"
 
 # dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
