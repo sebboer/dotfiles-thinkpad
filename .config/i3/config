@@ -126,7 +126,7 @@ bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
+bindsym $mod+5 workspace $ws5; layout tabbed
 bindsym $mod+6 workspace $ws6
 bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
@@ -155,8 +155,8 @@ assign [class="discord"] $ws4
 # Autostart
 # ===========================================================================================
 
-exec thunderbird
-exec bitwarden-bin
+exec_always thunderbird 
+exec_always bitwarden-bin 
 exec urxvt
 exec telegram-desktop
 exec discord
