@@ -210,7 +210,7 @@ click-right = playerctl next
 
 [module/updatenotifier]
 type = custom/script
-exec = yay -Qu | wc -l
+exec = ~/.config/polybar/scripts/update-notifier.sh
 interval = 600
 format = <label>
 format-prefix = " "
