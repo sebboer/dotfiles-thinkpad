@@ -3,6 +3,8 @@
 alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 
+#XRANDR
+alias workspace-xrandr="xrandr --output DP2-2 --primary --output eDP1 --off"
 
 # Pywal
 alias wal-wood="wal -q -n -a "92" -i ~/Pictures/Wallpapers/wood.jpg"
