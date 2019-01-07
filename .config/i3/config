@@ -98,9 +98,9 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# ==========================================================================================
+# ======================================================================================
 # Workspaces
-# ==========================================================================================
+# ======================================================================================
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -146,9 +146,9 @@ assign [class="TelegramDesktop"] $ws4
 assign [class="discord"] $ws4
 for_window [class="Spotify"] move to workspace $ws5
 
-# ===========================================================================================
+# ======================================================================================
 # Autostart
-# ===========================================================================================
+# ======================================================================================
 
 exec_always thunderbird 
 exec_always bitwarden-bin 
@@ -164,9 +164,9 @@ bindsym $mod+Shift+r restart
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+e exec ~/.config/scripts/exit-dmenu.sh
 
-# =================================================================================================
+# ======================================================================================
 # RESIZE
-# =================================================================================================
+# ======================================================================================
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -197,9 +197,9 @@ bindsym $mod+r mode "resize"
 
 bindsym $mod+Shift+x exec betterlockscreen -l
 
-# =============================================================================================
+# ======================================================================================
 # MEDIA Keys
-# =============================================================================================
+# ======================================================================================
 # Media player controls for Mediakeys
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPause exec playerctl pause
