@@ -217,19 +217,21 @@ bindsym XF86Bluetooth exec blueman-manager
 bindsym XF86Display exec playerctl play-pause
 bindsym Control+Shift+XF86Display exec playerctl next
 bindsym Control+XF86Display exec playerctl previous
+bindsym Print exec xdotool click 8
+bindsym Shift+Print exec xdotool click 9
 
-# =============================================================================================
+# ======================================================================================
 # Gaps
-# =============================================================================================
+# ======================================================================================
 gaps inner 10
 gaps outer 10
 smart_gaps on
 new_window pixel 3
 
 
-# ==============================================================================================
+# ======================================================================================
 # Pywal
-# ==============================================================================================
+# ======================================================================================
 # Set colors from Xresources
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
