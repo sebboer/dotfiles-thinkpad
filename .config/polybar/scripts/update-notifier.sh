@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sleep 10
 query=$(yay -Qu)
 if [[ $query == *"Get https://aur.archlinux.org"* ]]; then
 	echo "-"
