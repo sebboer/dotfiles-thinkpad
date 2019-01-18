@@ -75,3 +75,6 @@ source $HOME/.config/zsh/common-functions.zsh
 # function in >> ~/.config/zsh/common-functions.zsh
 zle -N zle-line-init
 zle -N zle-keymap-select
+
+# added by travis gem
+[ -f /home/basti/.travis/travis.sh ] && source /home/basti/.travis/travis.sh
