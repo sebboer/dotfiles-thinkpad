@@ -39,6 +39,7 @@ alias dm='docker-machine'
 alias dki='docker image'
 alias dkstart='systemctl start docker'
 alias dkco='docker-compose'
+alias dkstopall='docker stop $(docker ps -a -q)'
 
 #
 alias vim='nvim'
