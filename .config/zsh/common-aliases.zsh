@@ -41,6 +41,13 @@ alias dkstart='systemctl start docker'
 alias dkco='docker-compose'
 alias dkstopall='docker stop $(docker ps -a -q)'
 
+# Calendar
+alias cal='gcalcli'
+alias calp='gcalcli --calendar=sebastian.boerakker@gmail.com'
+alias calg='gcalcli --calendar="Gemeinsamer Kalender"'
+alias calm='gcalcli --calendar="Michelle"'
+alias calw='gcalcli calw'
+
 #
 alias vim='nvim'
 alias grive='grive -p /home/basti/googledrive/'
