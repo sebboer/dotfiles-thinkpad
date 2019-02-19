@@ -29,19 +29,23 @@ source ~/.cache/wal/colors-tty.sh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  docker
+  aws
   cargo
-  docker-machine
   copydir
   copyfile
   colored-man-pages
+  docker
+  docker-compose
+  git
   npm
   nvm
   node
   ng
-  aws
-  vi-mode
+  pip
+  rust
+  sudo
+  vi-mode-custom
+  wd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -78,3 +82,7 @@ zle -N zle-keymap-select
 
 # added by travis gem
 [ -f /home/basti/.travis/travis.sh ] && source /home/basti/.travis/travis.sh
+
+# history search
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
