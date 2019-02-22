@@ -33,7 +33,9 @@ font pango:System San Francisco Display 13
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+Return exec alacritty --title "Floating"
+for_window [class="Alacritty" title="Floating"] floating enable
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -152,7 +154,7 @@ for_window [class="Spotify"] move to workspace $ws5
 
 exec_always thunderbird 
 exec_always bitwarden-bin 
-exec urxvt
+exec alacritty
 exec telegram-desktop
 exec discord
 
