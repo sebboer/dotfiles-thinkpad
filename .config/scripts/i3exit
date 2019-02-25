@@ -2,16 +2,16 @@
 
 case "$1" in
     lock)
-        blurlock
+        betterlockscreen -l dim -t "Hello "$USER"!"
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-	 /usr/bin/betterlockscreen -l & systemctl suspend
+	betterlockscreen -s dim -t "Hello "$USER"!"
         ;;
     hibernate)
-        /usr/bin/betterlockscreen -l & systemctl hibernate
+        betterlockscreen -l dim -t "Hello "$USER"!" & systemctl hibernate
         ;;
     reboot)
         systemctl reboot
