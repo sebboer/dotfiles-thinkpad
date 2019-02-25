@@ -2,7 +2,7 @@
 
 case "$1" in
     lock)
-        /usr/bin/betterlockscreen -l
+        blurlock
         ;;
     logout)
         i3-msg exit
