@@ -234,6 +234,7 @@ assign [class="Thunderbird"] $ws5
 assign [class="Bitwarden"] $ws5
 assign [class="TelegramDesktop"] $ws4
 assign [class="discord"] $ws4
+assign [class="Slack"] $ws5
 for_window [class="Spotify"] move to workspace $ws5
 
 # switch to workspace with urgent window automatically
