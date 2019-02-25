@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/basti/.oh-my-zsh
+export ZSH=/home/basti/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -50,15 +50,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # ======================================================================
 # Config Files
@@ -81,8 +74,11 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 
 # added by travis gem
-[ -f /home/basti/.travis/travis.sh ] && source /home/basti/.travis/travis.sh
+#[ -f /home/basti/.travis/travis.sh ] && source /home/basti/.travis/travis.sh
 
 # history search
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
+
+# NVM
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  --no-use
