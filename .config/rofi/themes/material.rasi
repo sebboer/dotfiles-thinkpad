@@ -25,7 +25,7 @@
 	base0E: #C792EA;
 	base0F: #FF5370;
 
-	/*base0D: #00BCD4;*/
+	base0D: #1abb9b;
 
 	spacing: 0;
 	background-color: transparent;
