@@ -43,8 +43,8 @@ plugins=(
   ng
   pip
   rust
-  sudo
   vi-mode-custom
+  sudo
   wd
 )
 
