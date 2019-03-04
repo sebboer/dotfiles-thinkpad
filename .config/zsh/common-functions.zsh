@@ -19,3 +19,14 @@ function zle-line-init zle-keymap-select {
     RPS2=$RPS1
     zle reset-prompt
 }
+
+# NVM quick-fix
+# nvm startup very slow see more: 
+# https://github.com/creationix/nvm/issues/1277
+nvm_load () {
+  . $NVM_DIR/nvm.sh
+}
+alias node='unalias nvm; unalias node; unalias npm; nvm_load; node $@'
+alias npm='unalias nvm; unalias node; unalias npm; nvm_load; npm $@'
+alias nvm='unalias nvm; unalias node; unalias npm; nvm_load; nvm $@'
+
