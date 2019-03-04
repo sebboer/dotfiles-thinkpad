@@ -60,6 +60,7 @@ bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
 # Screen brightness controls
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+bindsym XF86WakeUp exec "alacritty -e nnn"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
