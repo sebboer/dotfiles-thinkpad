@@ -10,6 +10,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'w0rp/ale'
 Plug 'chrisbra/Colorizer'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
