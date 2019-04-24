@@ -284,6 +284,7 @@ exec_always --no-startup-id bitwarden-bin
 exec --no-startup-id alacritty
 exec --no-startup-id telegram-desktop
 exec --no-startup-id discord
+exec --no-startup-id slack
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
