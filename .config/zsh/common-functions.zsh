@@ -20,13 +20,11 @@ function zle-line-init zle-keymap-select {
     zle reset-prompt
 }
 
-# NVM quick-fix
-# nvm startup very slow see more: 
-# https://github.com/creationix/nvm/issues/1277
-#nvm_load () {
-#  . $NVM_DIR/nvm.sh
-#}
-#alias node='unalias nvm; unalias node; unalias npm; nvm_load; node $@'
-#alias npm='unalias nvm; unalias node; unalias npm; nvm_load; npm $@'
-#alias nvm='unalias nvm; unalias node; unalias npm; nvm_load; nvm $@'
 
+ffmpeg-no-sound() {
+	ffmpeg -i $1 -c copy -an "no-sound"$1
+}
+
+ffmpeg-extract-sound() {
+	ffmpeg -i $1 -vn -acodec copy output-audio.aac
+}
