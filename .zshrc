@@ -73,17 +73,9 @@ source $HOME/.config/zsh/common-functions.zsh
 zle -N zle-line-init
 zle -N zle-keymap-select
 
-# added by travis gem
-#[ -f /home/basti/.travis/travis.sh ] && source /home/basti/.travis/travis.sh
-
 # history search
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
-
-# NVM
-# Starting very slow....
-# see more >> function in >> ~/.config/zsh/common-functions.zsh
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
