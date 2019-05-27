@@ -28,3 +28,7 @@ ffmpeg-no-sound() {
 ffmpeg-extract-sound() {
 	ffmpeg -i $1 -vn -acodec copy output-audio.aac
 }
+
+copy-unicode() {
+	echo -e '\u'$1 | xclipsel
+}
