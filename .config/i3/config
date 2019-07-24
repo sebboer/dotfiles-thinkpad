@@ -205,6 +205,7 @@ assign [class="Bitwarden"] $ws5
 assign [class="TelegramDesktop"] $ws4
 assign [class="discord"] $ws4
 assign [class="Slack"] $ws5
+assign [class="signal"] $ws4
 for_window [class="Spotify"] move to workspace $ws5
 
 # Open specific applications in floating mode
