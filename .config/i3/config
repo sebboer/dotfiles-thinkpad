@@ -41,6 +41,7 @@ bindsym $mod+d exec rofi -show drun
 bindsym $mod+Shift+d exec rofi -show run
 bindsym $mod+Tab exec rofi -show window
 bindsym $mod+Shift+e exec ~/.config/scripts/exit-dmenu.sh
+bindsym $mod+Shift+x exec ~/.config/scripts/i3exit lock
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
