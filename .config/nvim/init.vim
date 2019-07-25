@@ -40,6 +40,10 @@ nnoremap <C-n> :NnnPicker '%:p:h'<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 nnoremap <C-t> :tabnew<space>
+map <C-c> "+y
+map <C-a> ggVG
+map <C-v> "+gP
+
 
 " --- Airline Settings ---
 set laststatus=2
