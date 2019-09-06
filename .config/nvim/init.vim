@@ -13,6 +13,7 @@ Plug 'w0rp/ale'
 Plug 'chrisbra/Colorizer'
 Plug 'leafgarland/typescript-vim'
 Plug 'mcchrish/nnn.vim'
+Plug 'tomlion/vim-solidity'
 
 call plug#end()
 
