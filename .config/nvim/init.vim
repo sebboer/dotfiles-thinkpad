@@ -1,4 +1,3 @@
-
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'rust-lang/rust.vim'
@@ -14,6 +13,11 @@ Plug 'chrisbra/Colorizer'
 Plug 'leafgarland/typescript-vim'
 Plug 'mcchrish/nnn.vim'
 Plug 'tomlion/vim-solidity'
+Plug 'lervag/vimtex'
+Plug 'junegunn/goyo.vim'
+Plug 'vim-pandoc/vim-rmarkdown'
+Plug 'vim-pandoc/vim-pandoc'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 call plug#end()
 
@@ -46,6 +50,10 @@ map <C-a> ggVG
 map <C-v> "+gP
 
 
+autocmd Filetype rmd,rmarkdown map <F5> :RMarkdown pdf<CR>
+autocmd Filetype tex map <F10> :VimtexCompile <CR>
+autocmd BufRead,BufNewFile *.rmd set filetype=rmarkdown
+
 " --- Airline Settings ---
 set laststatus=2
 let g:airline_powerline_fonts=1
@@ -56,3 +64,6 @@ let g:nnn#action = { '<c-t>': 'tab split'}
 
 " rust.vim settings
 let g:rustfmt_autosave = 1
+
+" --- vimtex Settings ---
+let g:vimtex_view_method = 'zathura'
