@@ -48,6 +48,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 
 #mounts
 bindsym $mod+Shift+m exec ~/.config/scripts/mount/mounts.sh
+bindsym $mod+Shift+u exec ~/.config/scripts/mount/umount.sh
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
