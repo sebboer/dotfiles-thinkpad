@@ -27,7 +27,7 @@ font pango:SauceCodePro Nerd Font Mono 14
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty -e "tmux"
+bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec alacritty --title "Floating"
 for_window [class="Alacritty" title="Floating"] floating enable
 
