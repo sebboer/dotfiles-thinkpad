@@ -67,6 +67,10 @@ bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 #bindsym XF86WakeUp exec "alacritty -e nnn"
 
+# sound controls
+bindsym $mod+bracketright exec "amixer -q sset Master 5%+ unmute"
+bindsym $mod+bracketleft exec "amixer -q sset Master 5%- unmute"
+
 # Start Applications
 bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+F2 exec firefox-developer-edition
