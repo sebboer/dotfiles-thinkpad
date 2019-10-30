@@ -12,3 +12,4 @@ export NNN_CONTEXT_COLORS='3254'
 export NNN_COPIER=$HOME/.config/nnn/copier.sh
 export NNN_BMS='d:~/Downloads;g:~/googledrive;m:~/mnt;s:~/googledrive/Studium;w:~/workspace;v:~/Videos;p:~/Pictures;'
 export NNN_PLUG='s:sxiv;p:pdfview'
+export NNN_TRASH=1
