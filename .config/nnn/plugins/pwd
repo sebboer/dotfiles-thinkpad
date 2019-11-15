@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+# Description: Print Working Directory to Clipboard
+# Author: sebboer
+
+echo -n $(pwd) | xclip -selection "clipboard"

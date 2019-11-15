@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# Description: Open a file/directory in mpv
+# Requires: mpv
+#
+# Author: sebboer
+
+if ! [ -z "$1" ]; then
+    mpv "$1" >/dev/null 2>&1 &
+fi
