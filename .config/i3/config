@@ -71,6 +71,9 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 bindsym $mod+bracketright exec "amixer -q sset Master 5%+ unmute"
 bindsym $mod+bracketleft exec "amixer -q sset Master 5%- unmute"
 
+#playerctl
+bindsym $mod+p exec playerctl play-pause
+
 # Start Applications
 bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+F2 exec firefox-developer-edition
@@ -150,7 +153,7 @@ bindsym $mod+minus move scratchpad
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+plus scratchpad show
-bindsym $mod+p scratchpad show
+bindsym $mod+Mod1+p scratchpad show
 
 #navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
