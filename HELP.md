@@ -1,3 +1,4 @@
+# Utils
 
 ## Split file in parts
 ### tar file
@@ -25,3 +26,6 @@ sudo pacman-mirrors --country Germany,Austria,France --api --protocol https && s
 ```
 xrandr --output eDP1 --auto --primary --output HDMI1 --left-of eDP1
 ```
+
+## Connect to smb connection as user
+* `sudo mount -t cifs -o credentials=/credentials,users,uid=1000,gid=1000 //<IPADDRESS>/path ~/mnt`
