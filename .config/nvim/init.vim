@@ -18,12 +18,14 @@ Plug 'junegunn/goyo.vim'
 Plug 'vim-pandoc/vim-rmarkdown'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
 
 " Theme
 colorscheme gruvbox
+set background=dark
 
 let g:lightline = {
 	\ 'colorscheme': 'gruvbox',
