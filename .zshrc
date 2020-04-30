@@ -43,6 +43,7 @@ plugins=(
   node
   ng
   pip
+  kubectl
   rust
   vi-mode-custom
   sudo
